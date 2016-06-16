@@ -1,0 +1,9 @@
+﻿  MAIN.cpp
+c:\program files (x86)\windows kits\8.1\include\um\dbghelp.h(1544): warning C4091: “typedef ”: 没有声明变量时忽略“”的左侧
+c:\program files (x86)\windows kits\8.1\include\um\dbghelp.h(3190): warning C4091: “typedef ”: 没有声明变量时忽略“”的左侧
+e:\dssg\dssg_test_server\dssg_test_server\main.cpp(30): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\dssg\dssg_test_server\dssg_test_server\main.cpp(32): warning C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(920): note: 参见“mbstowcs”的声明
+e:\dssg\dssg_test_server\dssg_test_server\main.cpp(41): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+  DSSG_TEST_SERVER.vcxproj -> E:\dssg\DSSG_TEST_SERVER\x64\Debug\DSSG_TEST_SERVER.exe
