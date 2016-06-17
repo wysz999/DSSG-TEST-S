@@ -31,7 +31,7 @@ void Log::Error(char * title, char * format, ...)
 	{
 		return;
 	}
-
+	SERVER_LOG_INNER_LOCK
 	std::string s = c_out(title, str,true);
 
 	write(s);
