@@ -1,27 +1,40 @@
+#pragma once
 #ifndef _COMMON_H_
-#define _COMMON_H
+#define _COMMON_H_
 #include <iostream>
 #include <Windows.h>
 #include <wchar.h>
-#include "dump.h"
 
 
-#include <string>
+#if COMPILER != COMPILER_GNU
+typedef signed __int64 int64;
+typedef signed __int32 int32;
+typedef signed __int16 int16;
+typedef signed __int8 int8;
+
+typedef unsigned __int64 uint64;
+typedef unsigned __int32 uint32;
+typedef unsigned __int16 uint16;
+typedef unsigned __int8 uint8;
+typedef float	Real;
+#else
+
+typedef int64_t int64;
+typedef int32_t int32;
+typedef int16_t int16;
+typedef int8_t int8;
+typedef uint64_t uint64;
+typedef uint32_t uint32;
+typedef uint16_t uint16;
+typedef uint8_t uint8;
+//typedef uint32_t DWORD;
+typedef float	Real;
+
+#endif
 
 
-#include "tinyXML\tinyxml.h"
 
 
-
-using namespace std;
-
-TCHAR *char2tchar(char *str)
-{
-	int iLen = strlen(str);
-	TCHAR *chRtn = new TCHAR[iLen + 1];
-	mbstowcs(chRtn, str, iLen + 1);
-	return chRtn;
-}
 
 
 #endif // !_COMMON_H_

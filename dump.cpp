@@ -19,7 +19,7 @@ LONG DumpFile::ApplicationCrashHandler(EXCEPTION_POINTERS *pException)
 {
 	// 这里弹出一个错误对话框并退出程序     
 	//     
-	//  FatalAppExit(-1,  _T("*** Unhandled Exception! ***"));    
+	FatalAppExit(-1,  _T("*** Unhandled Exception! ***"));    
 
 	CreateDumpFile(DumpFileName, pException);
 	return EXCEPTION_EXECUTE_HANDLER;

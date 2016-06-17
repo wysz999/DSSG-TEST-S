@@ -5,7 +5,7 @@
 XML数据管理类
 
 **********************/
-#include "common\common.h"
+//#include "common\common.h"
 
 class XMLDataManager
 {

@@ -2,7 +2,7 @@
 #define _DUMP_H_
 
 #include <Windows.h>  
-#pragma comment( lib, "dbghelp" )
+#pragma comment( lib, "lib\\dbghelp" )
 class DumpFile
 {
 public:
