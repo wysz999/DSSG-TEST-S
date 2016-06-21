@@ -40,6 +40,27 @@ public:
 	//输入char 转换 tchar
 	//char *str  待转换字符串
 	TCHAR *char2tchar(char *str);
+
+	//检查state的第pos位是否为1  
+	template <class T>
+	inline T bitCheck(T state, uint32 pos)
+	{
+		return state & 1 << pos - 1;
+	}
+
+	//将state的第pos位的值设为1  
+	template <class T>
+	inline T bitAdd(T state, uint32 pos)
+	{
+		return state | (1 << (pos - 1));
+	}
+
+	//将state的第pos位的值设为0  
+	template <class T>
+	inline T bitDel(int T, uint32 pos)
+	{
+		return state & (~(1 << (pos - 1)));
+	}
 };
 #define sLM serverLogicManager::getSingleton()
 #endif // ! _SERVER_LOGIC_MANAGER_H_

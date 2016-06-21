@@ -36,5 +36,13 @@ int main(int argc, char* argv[])
 
 	LOG.Debug("test", "123");
 	LOG.Error("test", "%d",233333);
+
+
+	unsigned count = 1; // 至少一个  
+	SYSTEM_INFO si;
+	GetSystemInfo(&si);
+	count = si.dwNumberOfProcessors;
+
+	cout << "cpu" << count << endl;
 	return 0;
 }
